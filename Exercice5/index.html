@@ -14,7 +14,7 @@
         <div class="header">
             <h2>Ajouter votre livre</h2>
         </div>
-        <form id="form" class="form" autocomplete="off" JavaScript:void(0)>
+        <form id="form" class="form" autocomplete="off" action="javaScript:void(0)"  onsubmit="event.preventDefault();onFormSubmit()">
             <div class="form-control">
                 <label>Titre</label>
                 <input type="text" placeholder="Titre de livre" id="title" name="elements" />
@@ -70,19 +70,11 @@
                 <label><input type="radio" name="hh" value="Roman" class="booktpes">Roman</label>
                 <label><input type="radio" name="hh" value="Essai" class="booktpes">Essai</label><br>
                 <label><input type="radio" name="hh" value="Bande-Dessinée" class="booktpes">Bande-Dessinée</label><br>
-
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
                 <small>Message Erreur</small>
             </div>
-            <div>
-                
-                <button class="remettre" type="reset" onclick="show()">Remettre</button>
-            </div>
-
-
         </form>
         <button onclick="hh()" class="ajouter">Ajouter</button>
+        <button class="remettre" type="reset" onclick="show()">Remettre</button>
 
      
     </div>
